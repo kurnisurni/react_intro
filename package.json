@@ -1,0 +1,33 @@
+{
+    "name": "react_intro",
+    "version": "1.0.0",
+    "description": "react_intro",
+    "main": "index.js",
+    "scripts": {
+        "dev": "parcel src/index.html",
+        "format": "prettier --write \"src/**/*.{js,jsx,html}\"",
+        "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kurnisurni/react_intro.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kurnisurni/react_intro/issues"
+    },
+    "homepage": "https://github.com/kurnisurni/react_intro#readme",
+    "devDependencies": {
+        "eslint": "^7.22.0",
+        "eslint-config-prettier": "^8.1.0",
+        "parcel": "^2.0.0-beta.1",
+        "parcel-bundler": "^1.12.3",
+        "prettier": "^2.2.1"
+    },
+    "dependencies": {
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    }
+}
