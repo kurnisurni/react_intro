@@ -8,6 +8,10 @@ const SearchParams = () => {
   const [animal, AnimalDropdown] = useDropdown("Animal", "dog", ANIMALS);
   const [breed, BreedDropdown, updateBreed] = useDropdown("Breed", "", breeds);
 
+// useEffect(() => {
+//   pet.breeds("dog").then(console.log, console.error);
+// });
+
   useEffect(() => {
     updateBreeds([]);
     updateBreed("");
@@ -15,7 +19,7 @@ const SearchParams = () => {
       const breedStrings = breeds.map(({ name }) => name);
       updateBreeds(breedStrings);
     }, console.error);
-  }, [animal]);
+  }, [animal, updateBreed, updateBreeds]);
 
   return (
     <div className="search-params">
