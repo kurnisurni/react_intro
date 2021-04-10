@@ -2,13 +2,7 @@ import React from "react";
 import pet from  "@frontendmasters/pet";
 
 class Details extends React.Component {
-    constructor(props) {  //do this constructor after component below, to set it to be a loading state
-        super(props);
-
-        this.state = {
-          loading:true
-        }
-    }
+    state =  { loading: true }; 
     componentDidMount () {
         pet.animal(this.props.id).then(({ animal }) => {  //this props is info that you get from parent class that's handed down to you
             this.setState({
