@@ -7,7 +7,7 @@ import ThemeContext from "./ThemeContext";
 class Details extends React.Component {
     state =  { loading: true }; 
     componentDidMount () {
-      throw new Error ('rofl');
+      //throw new Error ('rofl');
         pet.animal(this.props.id).then(({ animal }) => {  //this props is info that you get from parent class that's handed down to you
             this.setState({
                 name: animal.name,
